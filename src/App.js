@@ -109,7 +109,7 @@ class App extends Component {
                 <button
                   className="btn btn-primary"
                 >
-                  Add task
+                  Add Another task
                 </button>
               </div>
               {this.renderTabList()}
