@@ -98,6 +98,12 @@ class App extends Component {
     ));
   };
 
+  fetchContainerData = () => {
+    fetch("https://my-container-app.internal.nicecliff-03df0f81.southafricanorth.azurecontainerapps.io")
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+  };
+
   render() {
     return (
       <main className="container">
@@ -108,6 +114,7 @@ class App extends Component {
               <div className="mb-4">
                 <button
                   className="btn btn-primary"
+                  onClick={() => this.fetchContainerData()}
                 >
                   Add Another task
                 </button>
